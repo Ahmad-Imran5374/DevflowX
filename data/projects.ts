@@ -172,6 +172,7 @@ export const projects: Project[] = [
     serviceSlugs: ["web-application-development", "custom-software-development"],
         links: [{ href: "https://zavaro-wear.com", label: "Visit zavaro-wear.com" }],
     accent: "violet",
+    image: "/images/projects/zavaro.png",
     caseStudy: {
       challenge:
         "A premium fashion brand needed a store that feels fast, shows live stock and orders, supports local payment preferences and ranks in search.",
