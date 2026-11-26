@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="DevFlowX">
+<defs>
+      <linearGradient id="brandGradient" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#3B82F6"/>
+        <stop offset="0.52" stop-color="#4F46E5"/>
+        <stop offset="1" stop-color="#7C3AED"/>
+      </linearGradient>
+    </defs>
+<g transform="translate(8 10) scale(1)"><path fill="url(#brandGradient)" fill-rule="evenodd" d="M16 14 H54 C78 14 96 32 96 54 C96 76 78 94 54 94 H7 L26 75 H54 C66 75 75 66 75 54 C75 42 66 33 54 33 H35 L17 51 H47 L29 69 H2 L21 50 L39 32 H16 Z"/></g>
+<text x="128" y="82" font-family="Inter, Arial, Helvetica, sans-serif" font-size="60" font-weight="600" letter-spacing="-2.2" fill="#F8FAFC">DevFlow</text>
+<text x="359" y="82" font-family="Inter, Arial, Helvetica, sans-serif" font-size="60" font-weight="650" letter-spacing="-2.2" fill="url(#brandGradient)">X</text>
+</svg>
