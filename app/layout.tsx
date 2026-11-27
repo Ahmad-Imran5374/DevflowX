@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Urbanist } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { VisitTracker } from "@/components/layout/VisitTracker";
 import { services } from "@/data/services";
 import { siteConfig } from "@/lib/site";
 
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         />
+        <VisitTracker />
         <Navbar services={navServices} />
         <main id="main" className="flex-1">
           {children}
