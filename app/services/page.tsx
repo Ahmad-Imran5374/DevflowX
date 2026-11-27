@@ -6,9 +6,9 @@ import { ServiceCard } from "@/components/ui/ServiceCard";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "AI Automation, Web & Software Development Services",
   description:
-    "SaaS development, web applications, AI and LLM integration, business process automation, backend and API development, and custom software.",
+    "DevFlowX offers AI automation, LLM integration, business process automation, website and web application development, SaaS, backend and API development, and custom software.",
   alternates: { canonical: "/services" },
 };
 

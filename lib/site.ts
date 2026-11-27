@@ -8,6 +8,25 @@ export const siteConfig = {
   tagline: "Software, AI and automation, engineered for outcomes.",
   description:
     "DevFlowX is a software development studio building SaaS products, web applications, AI integrations, automation and APIs — user-first and outcome-driven.",
+  /** Default <title> for the home page and social cards (keyword-rich, under ~60 chars). */
+  seoTitle: "DevFlowX | AI Automation, Web & Software Development Company",
+  keywords: [
+    "DevFlowX",
+    "AI automation services",
+    "AI automation agency",
+    "business process automation",
+    "AI integration",
+    "LLM development",
+    "custom software development",
+    "web development company",
+    "website development services",
+    "web application development",
+    "SaaS development",
+    "API development",
+    "software development studio",
+    "Brampton Ontario software company",
+    "Canada software development",
+  ],
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
   /** Calendly / Cal.com / any scheduling URL. Falls back to the contact form. */
   bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL ?? "/contact?intent=consultation",
