@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { PageSkeleton } from "@/components/ui/PageSkeleton";
-import { Check, Info } from "lucide-react";
+import { Check } from "lucide-react";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { PageHero } from "@/components/sections/PageHero";
 import { Badge } from "@/components/ui/Badge";
@@ -103,12 +103,6 @@ async function CaseStudyPageContent({ params }: { params: PageProps<"/case-studi
                 </li>
               ))}
             </ul>
-            {cs.resultsPlaceholder && (
-              <p className="mt-6 flex gap-3 rounded-2xl border border-dashed border-brand-electric/40 bg-navy-900/50 p-4 text-base text-slate-400">
-                <Info aria-hidden className="mt-0.5 size-5 shrink-0 text-brand-electric" />
-                {cs.resultsPlaceholder}
-              </p>
-            )}
           </Block>
         </div>
       </Container>

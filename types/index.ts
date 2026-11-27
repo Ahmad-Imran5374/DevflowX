@@ -40,7 +40,6 @@ export type CaseStudy = {
   /** Factual outcomes. Only add measured results you can stand behind. */
   results: string[];
   /** Shown as a visible placeholder until real, measured results are added. */
-  resultsPlaceholder?: string;
 };
 
 export type Project = {

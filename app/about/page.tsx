@@ -13,12 +13,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
 };
 
-// Replace with real team members when ready. Do not publish invented people.
-const team = [
-  { name: "[Team member name]", role: "[Role]" },
-  { name: "[Team member name]", role: "[Role]" },
-  { name: "[Team member name]", role: "[Role]" },
-];
+// Add real team members here, e.g. { name: "Jane Doe", role: "Founder & CEO" }.
+// The Team section stays hidden while this list is empty. Do not publish invented people.
+const team: { name: string; role: string }[] = [];
 
 export default function AboutPage() {
   return (
@@ -91,26 +88,24 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section aria-labelledby="team-title" className="py-16">
-        <Container>
-          <SectionHeading
-            eyebrow="Team"
-            title={<span id="team-title">The people behind DevFlowX</span>}
-            description="[Placeholder] Team profiles will be added here."
-          />
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {team.map((m, i) => (
-              <li key={i} className="rounded-3xl border border-dashed border-line p-6">
-                <span className="flex size-16 items-center justify-center rounded-full bg-white/5 text-slate-500">
-                  <UserRound aria-hidden className="size-7" />
-                </span>
-                <p className="mt-4 font-medium text-slate-300">{m.name}</p>
-                <p className="text-sm text-slate-500">{m.role}</p>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
+      {team.length > 0 && (
+        <section aria-labelledby="team-title" className="py-16">
+          <Container>
+            <SectionHeading eyebrow="Team" title={<span id="team-title">The people behind DevFlowX</span>} />
+            <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {team.map((m) => (
+                <li key={m.name} className="surface rounded-3xl p-6">
+                  <span className="flex size-16 items-center justify-center rounded-full bg-white/5 text-slate-400">
+                    <UserRound aria-hidden className="size-7" />
+                  </span>
+                  <p className="mt-4 font-medium text-white">{m.name}</p>
+                  <p className="text-sm text-muted">{m.role}</p>
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </section>
+      )}
 
       <ConsultationCTA />
     </>

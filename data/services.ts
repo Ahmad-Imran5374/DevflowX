@@ -299,7 +299,7 @@ export const services: Service[] = [
       {
         question: "Who owns the code?",
         answer:
-          "Ownership terms are agreed in the contract before work begins. [Confirm your standard IP terms here.]",
+          "Ownership terms are agreed in the contract before work begins.",
       },
     ],
     projectSlugs: ["dzbnb", "sudduth-reality", "dentment", "kultur-tonight"],

@@ -6,8 +6,6 @@ import type { Project, ProjectCategory } from "@/types";
  * - Add measured business results to `caseStudy.results` only once confirmed with the client.
  * - Confirm you are permitted to showcase each project (client/employer work) before publishing.
  */
-const RESULTS_PLACEHOLDER =
-  "[Placeholder] Add measured business results here (e.g. conversion, time saved, revenue, uptime) once confirmed.";
 
 export const projects: Project[] = [
   {
@@ -44,7 +42,6 @@ export const projects: Project[] = [
         "Multi-tenant platform live on a staging environment.",
         "Single engine coordinating email, LinkedIn and AI voice outreach.",
       ],
-      resultsPlaceholder: RESULTS_PLACEHOLDER,
     },
   },
   {
@@ -80,7 +77,6 @@ export const projects: Project[] = [
         "Unstructured resumes converted into consistent, searchable candidate profiles.",
         "Every ranking is accompanied by explainable criteria.",
       ],
-      resultsPlaceholder: RESULTS_PLACEHOLDER,
     },
   },
   {
@@ -116,7 +112,6 @@ export const projects: Project[] = [
         "Booking logic handles thousands of simultaneous requests during timed membership releases.",
         "Live in production for the Swiss market.",
       ],
-      resultsPlaceholder: RESULTS_PLACEHOLDER,
     },
   },
   {
@@ -152,7 +147,6 @@ export const projects: Project[] = [
         "Sub-second search across millions of records.",
         "Automated PDF invoicing for every payment.",
       ],
-      resultsPlaceholder: RESULTS_PLACEHOLDER,
     },
   },
   {
@@ -188,7 +182,6 @@ export const projects: Project[] = [
         "Live storefront with real-time order and inventory updates.",
         "Two payment methods supported in a single checkout flow.",
       ],
-      resultsPlaceholder: RESULTS_PLACEHOLDER,
     },
   },
   {
@@ -229,7 +222,6 @@ export const projects: Project[] = [
         "End-to-end journey from checkout to results delivered in one platform.",
         "Explainable recommendations driven by a defined rules model.",
       ],
-      resultsPlaceholder: RESULTS_PLACEHOLDER,
     },
   },
   {
