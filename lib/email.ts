@@ -7,9 +7,13 @@ import { Resend } from "resend";
  */
 export function getEmailConfig() {
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
+  // CONTACT_TO_EMAIL may hold several comma-separated recipients.
+  const to = (process.env.CONTACT_TO_EMAIL ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
   const from = process.env.RESEND_FROM_EMAIL ?? "DevFlowX <onboarding@resend.dev>";
-  if (!apiKey || !to) return null;
+  if (!apiKey || to.length === 0) return null;
   return { resend: new Resend(apiKey), to, from };
 }
 

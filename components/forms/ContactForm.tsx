@@ -78,7 +78,7 @@ export function ContactForm({ services }: { services: { slug: string; title: str
         <CheckCircle2 aria-hidden className="mx-auto size-12 text-emerald-400" />
         <h2 className="mt-5 font-display text-3xl text-white">Thank you, we&apos;ve got your message</h2>
         <p className="mx-auto mt-3 max-w-md text-muted">
-          We will review your project details and reply by email shortly.
+          Our team will reach out to you within 24 hours.
         </p>
         <button
           type="button"
