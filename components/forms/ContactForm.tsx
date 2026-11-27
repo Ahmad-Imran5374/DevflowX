@@ -184,7 +184,7 @@ export function ContactForm({ services }: { services: { slug: string; title: str
       </div>
 
       {/* Honeypot: hidden from people and assistive tech, bots tend to fill it. */}
-      <div aria-hidden className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+      <div aria-hidden className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
         <label htmlFor="website">Leave this field empty</label>
         <input id="website" name="website" tabIndex={-1} autoComplete="off" />
       </div>
