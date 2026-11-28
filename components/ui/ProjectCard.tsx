@@ -24,7 +24,7 @@ export function ProjectCard({ project, size = "md" }: { project: Project; size?:
       <div className="relative mt-auto px-3 pb-3">
         <ProjectVisual
           project={project}
-          className={`rounded-[1.25rem] ${size === "lg" ? "aspect-[16/10]" : "aspect-[4/3]"} transition-transform duration-500 group-hover:scale-[1.015]`}
+          className={`rounded-[1.25rem] aspect-[2/1] transition-transform duration-500 group-hover:scale-[1.015]`}
         />
         {preview ? (
           <a

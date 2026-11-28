@@ -15,7 +15,8 @@ const accents: Record<Project["accent"], string> = {
 export function ProjectVisual({
   project,
   className = "",
-  sizes = "(min-width: 1024px) 33vw, 100vw",
+  // Generous defaults so high-DPI screens get a sharp srcset candidate rather than an upscaled small one.
+  sizes = "(min-width: 1024px) 66vw, 100vw",
 }: {
   project: Pick<Project, "title" | "image" | "accent">;
   className?: string;
@@ -23,8 +24,15 @@ export function ProjectVisual({
 }) {
   if (project.image) {
     return (
-      <div className={`relative overflow-hidden ${className}`}>
-        <Image src={project.image} alt={`${project.title} screenshot`} fill sizes={sizes} className="object-cover" />
+      <div className={`relative overflow-hidden bg-navy-950 ${className}`}>
+        <Image
+          src={project.image}
+          alt={`${project.title} screenshot`}
+          fill
+          sizes={sizes}
+          quality={95}
+          className="object-contain"
+        />
       </div>
     );
   }

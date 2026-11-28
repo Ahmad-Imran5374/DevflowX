@@ -9,6 +9,27 @@ import type { Project, ProjectCategory } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "joryka",
+    title: "Joryka",
+    tagline: "Multi-warehouse POS and inventory platform",
+    category: "SaaS",
+    summary:
+      "A multi-tenant point-of-sale and inventory platform with multi-warehouse stock, carton/unit handling, customers, quotations, invoices and reporting.",
+    highlights: [
+      "Point of sale with carton/unit pricing and warehouse-aware stock",
+      "Multi-warehouse inventory with negative-stock prevention",
+      "Customers, quotations, invoices and credit balances",
+      "Offline-capable sales with safe synchronization",
+    ],
+    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    serviceSlugs: ["saas-development", "backend-api-development", "custom-software-development"],
+    featured: true,
+    links: [{ href: "https://joryka.com/", label: "Visit joryka.com" }],
+    image: "/images/projects/joryka-pos.png",
+    accent: "blue",
+    status: "In development",
+  },
+  {
     slug: "codexa",
     title: "Codexa",
     tagline: "AI-native B2B lead-to-deal platform",
